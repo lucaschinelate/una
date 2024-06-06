@@ -151,3 +151,55 @@ body, html {
 .btn-primary:hover {
     background-color: #3a8fd2;
 }
+
+
+.login-section {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.brand-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.btn-google {
+    background-color: #db4437;
+    border-color: #db4437;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-google:hover {
+    background-color: #c23321;
+    border-color: #c23321;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #ffffff;
+}
+
+.btn-facebook:hover {
+    background-color: #2d4373;
+    border-color: #2d4373;
+}
