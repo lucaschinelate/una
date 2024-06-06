@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria de Estilo Personalizada</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logo_min.png" alt="Croqui-me" class="logo"> Croqui-me
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="dashboard.html">Meu Perfil</a>
+                <a class="nav-item nav-link" href="recomendacoes.html">Recomendações</a>
+                <a class="nav-item nav-link" href="feedback.html">Feedback</a>
+                <a class="nav-item nav-link active" href="consultoria.html">Consultoria</a>
+                <a class="nav-item nav-link" href="#">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Consultoria de Estilo Personalizada</h2>
+        <p class="text-center">Nossa consultoria de estilo personalizada é desenhada para ajudar você a descobrir e definir seu estilo único. Com base nas suas preferências, ocasiões e cores favoritas, nossos especialistas em moda irão sugerir as melhores peças de roupa que complementam sua personalidade e seu corpo. Seja para o dia a dia ou ocasiões especiais, estamos aqui para garantir que você se sinta confiante e estilosa em qualquer situação.</p>
+        <form action="recomendacoes.html">
+            <div class="form-group">
+                <label for="estilo">Qual é o seu estilo preferido?</label>
+                <input type="text" class="form-control" id="estilo" name="estilo" required>
+            </div>
+            <div class="form-group">
+                <label for="ocasião">Para quais ocasiões você costuma se vestir?</label>
+                <input type="text" class="form-control" id="ocasião" name="ocasião" required>
+            </div>
+            <div class="form-group">
+                <label for="cores">Quais são suas cores favoritas?</label>
+                <input type="text" class="form-control" id="cores" name="cores" required>
+            </div>
+            <div class="form-group">
+                <label for="pecas">Quais peças de roupa você mais gosta?</label>
+                <input type="text" class="form-control" id="pecas" name="pecas" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

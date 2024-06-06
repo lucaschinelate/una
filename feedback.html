@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logo_min.png" alt="Croqui-me" class="logo"> Croqui-me
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="dashboard.html">Meu Perfil</a>
+                <a class="nav-item nav-link" href="recomendacoes.html">Recomendações</a>
+                <a class="nav-item nav-link active" href="feedback.html">Feedback</a>
+                <a class="nav-item nav-link" href="consultoria.html">Consultoria</a>
+                <a class="nav-item nav-link" href="#">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Feedback dos Clientes</h1>
+        <div class="feedback-list">
+            <div class="feedback-item">
+                <h5>Maria Silva</h5>
+                <p>"Adorei as recomendações de roupas! Finalmente encontrei algo que se encaixa perfeitamente no meu estilo."</p>
+                <div class="rating">Avaliação: ★★★★☆</div>
+            </div>
+            <div class="feedback-item">
+                <h5>João Pereira</h5>
+                <p>"A consultoria de moda foi incrível! Me ajudou a escolher roupas que realmente valorizam meu corpo."</p>
+                <div class="rating">Avaliação: ★★★★★</div>
+            </div>
+            <div class="feedback-item">
+                <h5>Ana Costa</h5>
+                <p>"As recomendações foram boas, mas acho que poderia ter mais opções de roupas esportivas."</p>
+                <div class="rating">Avaliação: ★★★☆☆</div>
+            </div>
+            <div class="feedback-item">
+                <h5>Lucas Oliveira</h5>
+                <p>"Gostei das dicas de moda, me senti muito mais confiante com as roupas recomendadas."</p>
+                <div class="rating">Avaliação: ★★★★☆</div>
+            </div>
+            <div class="feedback-item">
+                <h5>Carla Souza</h5>
+                <p>"A experiência de compra foi ótima, as recomendações foram muito úteis."</p>
+                <div class="rating">Avaliação: ★★★★★</div>
+            </div>
+            <div class="feedback-item">
+                <h5>Rafael Lima</h5>
+                <p>"Achei a navegação no site um pouco confusa, mas as roupas são ótimas."</p>
+                <div class="rating">Avaliação: ★★★☆☆</div>
+            </div>
+            <div class="feedback-item">
+                <h5>Beatriz Rocha</h5>
+                <p>"Recomendo para todas as pessoas que querem se vestir bem, independente do tamanho."</p>
+                <div class="rating">Avaliação: ★★★★★</div>
+            </div>
+        </div>
+
+        <div class="feedback-form mt-5">
+            <h2>Deixe seu Feedback</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Feedback</label>
+                    <textarea class="form-control" id="feedback" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Avaliação</label>
+                    <select class="form-control" id="rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
