@@ -234,28 +234,6 @@ body, html {
     animation: scroll-left 20s linear infinite;
 }
 
-@keyframes scroll-left {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-@media (max-width: 768px) {
-    .login-form {
-        width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
-        padding: 15px; /* Ajusta o padding para telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .login-form {
-        width: 95%; /* Quase a largura total em dispositivos muito pequenos */
-        padding: 10px; /* Reduz ainda mais o padding */
-    }
-}
 
 .user-icon {
     width: 80px;
@@ -267,4 +245,36 @@ body, html {
 .user-profile {
     align-items: center;
     gap: 20px; /* Espaço entre o ícone e o texto */
+}
+
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .user-icon {
+        width: 60px;  /* Tamanho menor para tablets */
+        height: 60px;
+    }
+    .login-form {
+        width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-icon {
+        width: 50px;  /* Tamanho ainda menor para celulares */
+        height: 50px;
+    }
+    .login-form {
+        width: 95%; /* Quase a largura total em dispositivos muito pequenos */
+        padding: 10px; /* Reduz ainda mais o padding */
+    }
 }
