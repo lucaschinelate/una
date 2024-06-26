@@ -243,4 +243,16 @@ body, html {
     }
 }
 
+@media (max-width: 768px) {
+    .login-form {
+        width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+}
 
+@media (max-width: 480px) {
+    .login-form {
+        width: 95%; /* Quase a largura total em dispositivos muito pequenos */
+        padding: 10px; /* Reduz ainda mais o padding */
+    }
+}
