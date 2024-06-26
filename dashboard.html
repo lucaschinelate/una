@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Croqui-me</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +17,18 @@
         <div>
             <h3 class="mb-0">Angelita</h3>
             <p class="text-muted mb-0">angelitadugoni@icloud.com</p>
+        </div>
+    </div>
+
+    <div class="tips-section mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="h4">Dica do Dia</h2>
+                <p id="tipText">Aqui estão algumas dicas rápidas para ajudar você a escolher as melhores roupas para seu tipo de corpo.</p>
+            </div>
+            <button class="btn btn-secondary" id="nextTip">
+                <i class="fas fa-chevron-right"></i> <!-- Ícone de 'próximo' -->
+            </button>
         </div>
     </div>
 
@@ -35,11 +48,7 @@
         <a href="medidas.html" class="btn btn-primary mt-3">Atualizar Medidas</a>
     </div>
 
-    <div class="tips-section mt-4">
-        <h2 class="h4">Dica do Dia</h2>
-        <p id="tipText">Aqui estão algumas dicas rápidas para ajudar você a escolher as melhores roupas para seu tipo de corpo.</p>
-        <button class="btn btn-secondary" id="nextTip">Próxima Dica</button>
-    </div>
+
 </div>
 
 <footer class="footer mt-5 py-3 bg-dark text-white">

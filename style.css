@@ -247,6 +247,24 @@ body, html {
     gap: 20px; /* Espaço entre o ícone e o texto */
 }
 
+.tips-section {
+    background-color: #def3fc; /* Cor de fundo azul claro */
+    border-radius: 10px;       /* Bordas arredondadas */
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;             /* Espaçamento interno para evitar que o conteúdo toque as bordas */
+    margin-top: 20px;          /* Espaço adicional acima da seção para separação visual */
+}
+
+#nextTip {
+    background: none; /* Remove o fundo padrão do botão */
+    color: #007bff; /* Cor do ícone */
+    border: none; /* Remove a borda */
+}
+
+#nextTip:hover {
+    color: #0056b3; /* Cor do ícone ao passar o mouse */
+    background: none; /* Mantém o fundo transparente ao passar o mouse */
+}
 
 @keyframes scroll-left {
     from {
