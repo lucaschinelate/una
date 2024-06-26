@@ -256,3 +256,15 @@ body, html {
         padding: 10px; /* Reduz ainda mais o padding */
     }
 }
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #5dade2; /* A cor da borda pode ser ajustada conforme necessário */
+}
+
+.user-profile {
+    align-items: center;
+    gap: 20px; /* Espaço entre o ícone e o texto */
+}
