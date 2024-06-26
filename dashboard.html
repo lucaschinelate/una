@@ -5,64 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Croqui-me</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-	
 </head>
 <body>
-    <header>
-        <div class="navbar-placeholder"></div>
-    </header>
+<div class="navbar-placeholder"></div>
 
-    <div class="container mt-5">
-        <h1>Bem-vindo ao Croqui-me, [Nome do Usuário]!</h1>
-        <p class="lead">Aqui você pode acompanhar suas medidas e ver o progresso no seu caminho para encontrar as roupas que fazem você se sentir incrível.</p>
-
-        <div class="user-measurements">
-            <h2>Suas Medidas Atuais</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="measure-label">
-                        <strong>Altura:</strong> <span id="userHeight">172 cm</span>
-                    </div>
-                    <div class="measure-label">
-                        <strong>Peso:</strong> <span id="userWeight">85 kg</span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="measure-label">
-                        <strong>Busto:</strong> <span id="userBust">102 cm</span>
-                    </div>
-                    <div class="measure-label">
-                        <strong>Cintura:</strong> <span id="userWaist">88 cm</span>
-                    </div>
-                    <div class="measure-label">
-                        <strong>Quadril:</strong> <span id="userHips">104 cm</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="motivational-text mt-4">
-            <h3>Dicas do Dia</h3>
-            <p>Aqui estão algumas dicas rápidas para ajudar você a escolher as melhores roupas para seu tipo de corpo:</p>
-            <ul>
-                <li>Invista em peças que realcem suas melhores características.</li>
-                <li>Lembre-se, o conforto é tão importante quanto o estilo.</li>
-                <li>Não tenha medo de experimentar novos estilos e cores.</li>
-            </ul>
-        </div>
+<div class="container ">
+    <div class="welcome-section">
+        <h1 class="display-4">Bem-vindo ao Croqui-me!</h1>
+        <p class="lead">Aqui você pode acompanhar suas medidas e ver o progresso.</p>
     </div>
 
-    <footer class="footer mt-5 py-3 bg-dark text-white">
-        <div class="container">
-            <span>&copy; 2024 Croqui-me. Todos os direitos reservados.</span>
+    <div class="measurement-section py-4">
+        <h2 class="h4">Suas Medidas Atuais</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Altura:</strong> 172 cm</p>
+                <p><strong>Peso:</strong> 85 kg</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Busto:</strong> 102 cm</p>
+                <p><strong>Cintura:</strong> 88 cm</p>
+                <p><strong>Quadril:</strong> 104 cm</p>
+            </div>
         </div>
-    </footer>
+        <a href="medidas.html" class="btn btn-primary mt-3">Atualizar Medidas</a>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="navbar.js"></script>
+    <div class="tips-section mt-4">
+        <h2 class="h4">Dica do Dia</h2>
+        <p id="tipText">Aqui estão algumas dicas rápidas para ajudar você a escolher as melhores roupas para seu tipo de corpo.</p>
+        <button class="btn btn-secondary" id="nextTip">Próxima Dica</button>
+    </div>
+</div>
+
+<footer class="footer mt-5 py-3 bg-dark text-white">
+    <span>&copy; 2024 Croqui-me. Todos os direitos reservados.</span>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="navbar.js"></script>
+<script src="tips.js"></script>
 </body>
 </html>

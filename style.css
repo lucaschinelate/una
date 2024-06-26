@@ -20,6 +20,10 @@ body, html {
     color: #cccccc !important; /* Texto cinza claro ao passar o mouse */
 }
 
+.navbar-placeholder {
+    margin-bottom: 20px;
+}
+
 .login-section {
     background-color: #f8f9fa;
     min-height: 100vh; /* Mantém a altura mínima para cobrir a altura da viewport */
@@ -121,9 +125,21 @@ body, html {
 .container {
     max-width: 100%; /* Garante que o container nunca seja maior que a tela */
     width: 90%; /* Define a largura para 90% da tela para garantir margem interna */
+    background-color: white;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 15px 15px; /* Adiciona padding lateral para não colar nos cantos da tela */
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+
+}
+
+.container-login {
+    max-width: 100%; /* Garante que o container nunca seja maior que a tela */
+    width: 90%; /* Define a largura para 90% da tela para garantir margem interna */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 0 15px; /* Adiciona padding lateral para não colar nos cantos da tela */
 }
+
 .text-center {
     margin-bottom: 20px;
     color: #333;
@@ -208,6 +224,21 @@ body, html {
 
 .form-control::placeholder {
     color: #bbb; /* Altera a cor do texto do placeholder */
+}
+
+.tips-scrolling p {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 
