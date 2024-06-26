@@ -7,7 +7,6 @@ body, html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
 }
 
 .navbar {
@@ -245,19 +244,3 @@ body, html {
 }
 
 
-@media (max-width: 768px) {
-    .login-form, .feedback-form {
-        width: 100%;               /* Aumenta a largura em dispositivos menores */
-        padding: 5px 5px;            /* Reduz o padding para ajustar ao tamanho menor */
-        margin: 10px auto;
-    }
-
-    .social-buttons .btn {
-        width: 35px; /* Reduz o tamanho dos botões em telas menores */
-        height: 35px;
-    }
-
-    .logo {
-        max-width: 80px; /* Reduz o tamanho do logo em telas menores */
-    }
-}
