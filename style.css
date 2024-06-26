@@ -12,6 +12,7 @@ body, html {
 .navbar {
     background-color: #f8f9fa !important; /* Fundo preto */
     color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-nav .nav-link {
@@ -24,6 +25,15 @@ body, html {
 
 .navbar-placeholder {
     margin-bottom: 20px;
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,.1); /* Ajusta a cor da borda se necessário */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230073df' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3Csvg/%3E");
+    /* Cor do ícone alterada para #0073df que é um azul */
 }
 
 .login-section {
