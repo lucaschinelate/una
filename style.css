@@ -268,6 +268,7 @@ body, html {
     background-color: #def3fc; !important; /* Cor de fundo azul claro */
     border-radius: 10px;       /* Bordas arredondadas */
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    position: relative;
     padding: 20px;             /* Espaçamento interno para evitar que o conteúdo toque as bordas */
     margin-top: 20px;          /* Espaço adicional acima da seção para separação visual */
 }
@@ -291,6 +292,18 @@ body, html {
     padding: 5px; /* Espaço dentro do círculo */
 }
 
+#toggleTips {
+    border: none; /* Remove a borda do botão */
+    background: none; /* Remove o fundo para parecer limpo */
+}
+
+#toggleTips:hover {
+    background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
+}
+
+#toggleIcon {
+    font-size: 20px; /* Tamanho do ícone */
+}
 
 @keyframes scroll-left {
     from {
