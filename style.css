@@ -103,9 +103,10 @@ body, html {
 
 .feedback-form {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	margin-top: 10px; /* Ajuste conforme necessário */
+    padding: 15px; /* Reduz o padding se necessário para telas menores */
 }
 
 .feedback-form h2 {
@@ -118,10 +119,10 @@ body, html {
 
 
 .container {
-
-    max-width: 600px; /* Limita a largura máxima do container */
+    max-width: 100%; /* Garante que o container nunca seja maior que a tela */
+    width: 90%; /* Define a largura para 90% da tela para garantir margem interna */
     margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0px;
+    padding: 0 15px; /* Adiciona padding lateral para não colar nos cantos da tela */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -145,11 +146,12 @@ body, html {
 
 
 .login-form {
+	margin-top: 10px; /* Ajuste conforme necessário */
+    padding: 15px; /* Reduz o padding se necessário para telas menores */
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 20px; /* Adiciona um espaço pequeno do topo */
 }
 
 .brand-wrapper {
@@ -206,4 +208,20 @@ body, html {
 
 .form-control::placeholder {
     color: #bbb; /* Altera a cor do texto do placeholder */
+}
+
+
+@media (max-width: 768px) {
+    .login-form, .feedback-form {
+        padding: 10px; /* Reduz ainda mais o padding em telas menores */
+    }
+
+    .social-buttons .btn {
+        width: 35px; /* Reduz o tamanho dos botões em telas menores */
+        height: 35px;
+    }
+
+    .logo {
+        max-width: 80px; /* Reduz o tamanho do logo em telas menores */
+    }
 }
