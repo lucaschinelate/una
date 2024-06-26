@@ -1,11 +1,14 @@
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-image: url('imagens/fundo_moda_inclusiva.png'); /* Fundo gerado pelo DALL-E */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden; /* Esconde qualquer coisa que possa estar saindo horizontalmente */
+    position: relative;
 }
 
 .navbar {
@@ -134,10 +137,11 @@ body, html {
 }
 
 .container-login {
-    max-width: 100%; /* Garante que o container nunca seja maior que a tela */
-    width: 90%; /* Define a largura para 90% da tela para garantir margem interna */
+    max-width: 100%;
+    width: 100%; /* Ajustar para usar 100% da tela */
     margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0 15px; /* Adiciona padding lateral para não colar nos cantos da tela */
+    padding: 0 15px; /* Pode ajustar se necessário para menos, como 10px */
+    box-shadow: none; /* Remove sombra para evitar expansão visual externa */
 }
 
 .text-center {
@@ -161,7 +165,7 @@ body, html {
 
 .login-form {
 	margin-top: 10px; /* Ajuste conforme necessário */
-    padding: 15px; /* Reduz o padding se necessário para telas menores */
+    padding: 20px; /* Reduz o padding se necessário para telas menores */
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
