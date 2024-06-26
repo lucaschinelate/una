@@ -19,23 +19,13 @@ body, html {
 .navbar-nav .nav-link:hover {
     color: #cccccc !important; /* Texto cinza claro ao passar o mouse */
 }
+
 .login-section {
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for form */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    background-color: #f8f9fa;
+    min-height: 100vh; /* Mantém a altura mínima para cobrir a altura da viewport */
+    display: block; /* Muda de flex para block para evitar o alinhamento flex */
 }
 
-.login-form {
-    margin: auto;
-    padding: 20px;
-}
-
-.brand-wrapper .logo {
-    width: 150px; /* Ajuste a largura conforme necessário */
-    display: block;
-    margin: 0 auto 20px; /* Centraliza o logo e adiciona espaço abaixo */
-}
 
 .btn-primary, .btn-google, .btn-facebook {
     background-color: #5dade2;
@@ -128,12 +118,13 @@ body, html {
 
 
 .container {
-    height: auto; /* Mudança de altura para 'auto' para que apenas o necessário seja usado */
-    padding: 20px;
+
+    max-width: 600px; /* Limita a largura máxima do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
 .text-center {
     margin-bottom: 20px;
     color: #333;
@@ -153,20 +144,12 @@ body, html {
 }
 
 
-.login-section {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .login-form {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 100%; /* Garante que utilize toda a largura disponível dentro da coluna */
-    max-width: 500px; /* Define uma largura máxima para o formulário */
+    margin-top: 20px; /* Adiciona um espaço pequeno do topo */
 }
 
 .brand-wrapper {
@@ -175,20 +158,13 @@ body, html {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 .social-buttons {
     margin-top: 20px; /* Espaço entre o botão de login e os botões sociais */
 }
 
-.login-section {
-    background-color: #f8f9fa;
-    display: flex;
-    align-items: center; /* Assegura que o conteúdo seja centralizado verticalmente */
-    justify-content: center;
-    padding: 20px 0; /* Adiciona um padding vertical para respiração, remova a definição de min-height */
-}
 
 .login-title {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fonte moderna e clean */
