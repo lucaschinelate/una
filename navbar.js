@@ -5,7 +5,7 @@
             <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Ícone do usuário" class="user-icon rounded-circle">
             <div>
                 <h3 class="mb-0">Angelita</h3>
-                <p class="text-muted mb-0">angelitadugoni@icloud.com</p>
+                <p class="text-muted mb-0">angelitadugoni@icloud.coms</p>
             </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
