@@ -257,14 +257,23 @@ body, html {
 
 #nextTip {
     background: none; /* Remove o fundo padrão do botão */
-    color: #007bff; /* Cor do ícone */
+    color: #007bff !important; /* Cor do ícone, forçando aplicação */
     border: none; /* Remove a borda */
 }
 
 #nextTip:hover {
-    color: #0056b3; /* Cor do ícone ao passar o mouse */
+    color: #0056b3 !important; /* Cor do ícone ao passar o mouse */
     background: none; /* Mantém o fundo transparente ao passar o mouse */
 }
+
+.info-icon i {
+    font-size: 24px; /* Tamanho do ícone */
+    color: #007bff; /* Cor do ícone */
+    border: 2px solid #007bff; /* Borda opcional */
+    border-radius: 50%; /* Faz a borda redonda */
+    padding: 5px; /* Espaço dentro do círculo */
+}
+
 
 @keyframes scroll-left {
     from {
