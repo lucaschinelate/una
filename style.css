@@ -248,7 +248,7 @@ body, html {
 }
 
 .tips-section {
-    background-color: #def3fc; /* Cor de fundo azul claro */
+    background-color: #def3fc; !important; /* Cor de fundo azul claro */
     border-radius: 10px;       /* Bordas arredondadas */
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
     padding: 20px;             /* Espaçamento interno para evitar que o conteúdo toque as bordas */
