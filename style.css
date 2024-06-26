@@ -133,7 +133,12 @@ body, html {
     margin-bottom: 15px;
 }
 
-
+.footer {
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Cor igual ao navbar */
+    color: #333;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sombreamento superior */
+}
 .container {
     max-width: 100%; /* Garante que o container nunca seja maior que a tela */
     width: 90%; /* Define a largura para 90% da tela para garantir margem interna */
