@@ -269,6 +269,7 @@ body {
 
 .btn-google, .btn-facebook {
     border: none; /* Remove a borda */
+    border-radius: 200px;
 }
 
 .form-control::placeholder {
