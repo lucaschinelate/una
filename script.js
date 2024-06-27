@@ -20,3 +20,7 @@
         }
     });
 });
+
+document.getElementById('closeTips').addEventListener('click', function() {
+    document.querySelector('.tips-section').style.display = 'none';
+});
