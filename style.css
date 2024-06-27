@@ -185,6 +185,7 @@ body {
 
 .container-login {
     max-width: 100%;
+    padding-bottom: 0px;
     width: 100%; /* Ajustar para usar 100% da tela */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 0 15px; /* Pode ajustar se necessário para menos, como 10px */
