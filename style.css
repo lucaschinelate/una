@@ -358,8 +358,8 @@ body {
 
 @media (max-width: 768px) {
     .user-icon {
-        width: 40px;  /* Tamanho menor para tablets */
-        height: 40px;
+        width: 50px;  /* Tamanho menor para tablets */
+        height: 50px;
     }
     .login-form {
         width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
@@ -372,8 +372,8 @@ body {
 
 @media (max-width: 480px) {
     .user-icon {
-        width: 30px;  /* Tamanho ainda menor para celulares */
-        height: 30px;
+        width: 50px;  /* Tamanho ainda menor para celulares */
+        height: 50px;
     }
     .login-form {
         width: 95%; /* Quase a largura total em dispositivos muito pequenos */
