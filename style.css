@@ -207,15 +207,21 @@ body, html {
     margin-bottom: 20px; /* Espaço adicional abaixo do título */
 }
 
+.btn-group .btn {
+    flex: 1; /* Garante que os botões tenham a mesma largura */
+    margin: 5px; /* Adiciona margem para espaçar os botões */
+}
+
 .social-buttons .btn {
     width: 40px; /* Reduzir o tamanho do botão */
     height: 40px; /* Reduzir o tamanho do botão */
     margin: 0 5px;
 }
 
+.btn-group {
+    display: flex; /* Utiliza flexbox para alinhamento dos botões */
+}
 .btn-primary, .btn-secondary {
-	
-	
     padding: 5px 10px; /* Reduzir o padding dos botões */
     font-size: 14px; /* Tamanho menor de fonte para os botões */
 }
@@ -293,6 +299,18 @@ body, html {
     padding: 5px; /* Espaço dentro do círculo */
 }
 
+
+/* Certifica que os botões tenham a mesma altura */
+.btn-fill {
+    height: 38px; /* Altura fixa para todos os botões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Faz ambos os botões ocuparem espaço igual */
+    margin: 5px; /* Espaçamento padrão */
+}
+
+
 #toggleTips {
     border: none; /* Remove a borda do botão */
     background: none; /* Remove o fundo para parecer limpo */
@@ -323,6 +341,9 @@ body, html {
     .login-form {
         width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
         padding: 15px; /* Ajusta o padding para telas menores */
+    }
+    .btn-fill {
+        padding: 10px 0; /* Reduz o padding horizontal e aumenta o vertical */
     }
 }
 
