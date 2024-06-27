@@ -44,7 +44,7 @@ body, html {
 }
 
 
-.btn-primary, .btn-google, .btn-facebook {
+.btn-secondary .btn-primary, .btn-google, .btn-facebook {
     background-color: #5dade2;
     border: none;
     margin-bottom: 10px; /* Espaço entre botões */
