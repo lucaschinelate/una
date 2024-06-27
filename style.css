@@ -431,6 +431,10 @@ body {
     .btn-fill {
         padding: 10px 0; /* Reduz o padding horizontal e aumenta o vertical */
     }
+    .card-img-top {
+        height: 100px; /* Define a altura das imagens para serem iguais */
+        width: 100px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -443,7 +447,8 @@ body {
         padding: 10px; /* Reduz ainda mais o padding */
     }
     .card-img-top {
-        height: 100px; /* Define a altura das imagens para serem iguais */
+        height: 90px; /* Define a altura das imagens para serem iguais */
+        width: 90px;
     }
 }
 
