@@ -17,6 +17,10 @@ body, html {
     overflow-y: auto;
 }
 
+.index-page {
+    padding-bottom: 0px; !important; /* Remove o padding-bottom apenas para a página index.html */
+    padding-top: 0px; !important; /* Remove o padding-bottom apenas para a página index.html */
+}
 .navbar {
     background-color: #f8f9fa !important; /* Fundo preto */
     color: #333;
