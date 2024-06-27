@@ -1,7 +1,13 @@
+.text-center {
+    color: #333;
+}
+
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding-bottom: 70px; /* Ajuste conforme a altura do seu footer */
+    margin-bottom: 0px; !important;
     font-family: 'Roboto', sans-serif;
     background-image: url('imagens/fundo_moda_inclusiva.png'); /* Fundo gerado pelo DALL-E */
     background-size: cover;
@@ -35,6 +41,19 @@ body, html {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3Csvg/%3E");!important;
+}
+
+.navbar {
+    position: fixed; /* Mantém o navbar fixo no topo */
+    top: 0; /* Alinha o navbar no topo da página */
+    left: 0; /* Alinha à esquerda da página */
+    width: 100%; /* O navbar deve ocupar a largura total */
+    z-index: 1030; /* Assegura que o navbar fique acima de outros conteúdos */
+}
+
+body {
+    padding-top: 70px; /* Adiciona espaço no topo do corpo da página para evitar sobreposição com o navbar */
+    padding-bottom: 60px;
 }
 
 .login-section {
@@ -135,10 +154,15 @@ body, html {
 }
 
 .footer {
-    margin-top: 20px;
-    background-color: #f8f9fa; /* Cor igual ao navbar */
-    color: #333;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sombreamento superior */
+    position: fixed; /* Mantém o footer fixo na parte inferior */
+    bottom: 0; /* Alinha o footer na parte inferior da página */
+    left: 0; /* Alinha à esquerda da página */
+    width: 100%; /* O footer deve ocupar a largura total */
+    z-index: 1030; /* Assegura que o footer fique acima de outros conteúdos */
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sombra para dar destaque */
+    background-color: #f8f9fa; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+
 }
 .container {
     max-width: 100%; /* Garante que o container nunca seja maior que a tela */
@@ -148,7 +172,7 @@ body, html {
     padding: 15px 15px; /* Adiciona padding lateral para não colar nos cantos da tela */
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
-
+    margin-bottom: 20px;
 }
 
 .container-login {
@@ -159,10 +183,6 @@ body, html {
     box-shadow: none; /* Remove sombra para evitar expansão visual externa */
 }
 
-.text-center {
-    margin-bottom: 20px;
-    color: #333;
-}
 
 .form-group label {
     font-weight: bold;
@@ -259,8 +279,8 @@ body, html {
 
 
 .user-icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border: 3px solid #5dade2; /* A cor da borda pode ser ajustada conforme necessário */
 }
@@ -335,8 +355,8 @@ body, html {
 
 @media (max-width: 768px) {
     .user-icon {
-        width: 60px;  /* Tamanho menor para tablets */
-        height: 60px;
+        width: 40px;  /* Tamanho menor para tablets */
+        height: 40px;
     }
     .login-form {
         width: 90%;  /* Aumenta a largura em dispositivos menores para melhor legibilidade */
@@ -349,8 +369,8 @@ body, html {
 
 @media (max-width: 480px) {
     .user-icon {
-        width: 50px;  /* Tamanho ainda menor para celulares */
-        height: 50px;
+        width: 30px;  /* Tamanho ainda menor para celulares */
+        height:300px;
     }
     .login-form {
         width: 95%; /* Quase a largura total em dispositivos muito pequenos */
