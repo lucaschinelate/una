@@ -16,7 +16,7 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link active" href="dashboard.html">Meu Perfil</a>
                 <a class="nav-item nav-link" href="recomendacoes.html">Recomendações</a>
-                <a class="nav-item nav-link" href="feedback.html">Feedback</a>
+                <a class="nav-item nav-link" href="feedback.html">Avaliações</a>
                 <a class="nav-item nav-link" href="consultoria.html">Consultoria</a>
                 <a class="nav-item nav-link" href="index.html">Sair</a>
             </div>
