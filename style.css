@@ -373,7 +373,7 @@ body {
 @media (max-width: 480px) {
     .user-icon {
         width: 30px;  /* Tamanho ainda menor para celulares */
-        height: 30x;
+        height: 30px;
     }
     .login-form {
         width: 95%; /* Quase a largura total em dispositivos muito pequenos */
