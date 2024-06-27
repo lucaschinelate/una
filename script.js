@@ -1,17 +1,19 @@
 ﻿document.addEventListener("DOMContentLoaded", function() {
-    var tipSection = document.getElementById("tipText");
-    var toggleButton = document.getElementById("toggleTips");
-    var toggleIcon = document.getElementById("toggleIcon");
+    const toggleButton = document.getElementById('toggleTips');
+    const tipText = document.getElementById('tipText');
+    const nextTipButton = document.getElementById('nextTip');
+    const toggleIcon = document.getElementById('toggleIcon');
 
-    toggleButton.addEventListener("click", function() {
-        if (tipSection.style.display === "none") {
-            tipSection.style.display = ""; // Mostrar as dicas
-            toggleIcon.classList.remove("fa-plus");
-            toggleIcon.classList.add("fa-minus");
+    toggleButton.addEventListener('click', function() {
+        // Toggle visibility of tip text and next tip button
+        if (tipText.style.display === 'none') {
+            tipText.style.display = '';
+            nextTipButton.style.display = '';
+            toggleIcon.className = 'fas fa-minus';
         } else {
-            tipSection.style.display = "none"; // Esconder as dicas
-            toggleIcon.classList.remove("fa-minus");
-            toggleIcon.classList.add("fa-plus");
+            tipText.style.display = 'none';
+            nextTipButton.style.display = 'none';
+            toggleIcon.className = 'fas fa-plus';
         }
     });
 });

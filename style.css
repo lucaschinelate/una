@@ -265,7 +265,7 @@ body, html {
 }
 
 .tips-section {
-    background-color: #def3fc; !important; /* Cor de fundo azul claro */
+    background-color: #def3fc   ; !important; /* Cor de fundo azul claro */
     border-radius: 10px;       /* Bordas arredondadas */
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
     position: relative;
@@ -274,6 +274,7 @@ body, html {
 }
 
 #nextTip {
+    font-size: 24px;
     background: none; /* Remove o fundo padrão do botão */
     color: #007bff !important; /* Cor do ícone, forçando aplicação */
     border: none; /* Remove a borda */
@@ -302,7 +303,7 @@ body, html {
 }
 
 #toggleIcon {
-    font-size: 20px; /* Tamanho do ícone */
+    font-size: 16px; /* Tamanho do ícone */
 }
 
 @keyframes scroll-left {
