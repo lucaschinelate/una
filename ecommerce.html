@@ -3,55 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integração com E-commerce</title>
+    <title>Dashboard - Croqui-me</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Inclusão Moda</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="medidas.html">Medidas</a></li>
-                <li class="nav-item"><a class="nav-link" href="recomendacoes.html">Recomendações</a></li>
-                <li class="nav-item"><a class="nav-link" href="visualizacao.html">Visualização</a></li>
-                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-                <li class="nav-item"><a class="nav-link" href="ecommerce.html">E-commerce</a></li>
-                <li class="nav-item"><a class="nav-link" href="consultoria.html">Consultoria</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="container mt-5">
-        <h2 class="text-center">Integração com E-commerce</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Produto" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <h3>Produto 1</h3>
-                <p>Descrição do produto. Detalhes sobre o material, tamanho disponível, etc.</p>
-                <div class="form-group">
-                    <label for="tamanho">Escolha o tamanho:</label>
-                    <select class="form-control" id="tamanho">
-                        <option>P</option>
-                        <option>M</option>
-                        <option>G</option>
-                        <option>GG</option>
-                    </select>
+<div class="container mt-5">
+    <h2 class="mb-4">Lista de Ecommerces Recomendados</h2>
+    <div class="row">
+        <!-- Card Shein -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagens/logo_shein.png" class="card2-img-top" alt="Logo Shein">
+                <div class="card2-body d-flex flex-column">
+                    <h5 class="card-title">Shein</h5>
+                    <p class="card-text">Shein oferece moda rápida com estilos que estão sempre em tendência, abrangendo uma ampla gama de acessórios e roupas a preços acessíveis.</p>
+                    <a href="https://www.shein.com" class="btn btn-primary mt-auto">Visitar Shein</a>
                 </div>
-                <button class="btn btn-primary btn-block">Comprar</button>
+            </div>
+        </div>
+        <!-- Card Insider -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagens/logo_insider.png" class="card2-img-top" alt="Logo Insider">
+                <div class="card2-body d-flex flex-column">
+                    <h5 class="card-title">Insider</h5>
+                    <p class="card-text">Insider é conhecida por sua inovação em roupas básicas, utilizando tecnologia para melhorar o conforto no dia a dia.</p>
+                    <a href="https://www.useinsider.com" class="btn btn-primary mt-auto">Visitar Insider</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card Use Reserva -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagens/logo_reserva.png" class="card2-img-top" alt="Logo Use Reserva">
+                <div class="card2-body d-flex flex-column">
+                    <h5 class="card-title">Use Reserva</h5>
+                    <p class="card-text">Reserva traz uma mistura de estilo moderno com toques clássicos, ideal para quem busca distinção em moda masculina.</p>
+                    <a href="https://www.usereserva.com" class="btn btn-primary mt-auto">Visitar Use Reserva</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="navbar.js"></script>
 </body>
 </html>

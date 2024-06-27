@@ -129,7 +129,8 @@ body {
 
 .card-img-top {
     width: 100%;
-    height: auto;
+    height: 300px; /* Define a altura das imagens para serem iguais */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
 }
 
 .feedback-list {
@@ -441,4 +442,20 @@ body {
         width: 95%; /* Quase a largura total em dispositivos muito pequenos */
         padding: 10px; /* Reduz ainda mais o padding */
     }
+}
+
+.card2-img-top {
+    height: 180px; /* Define a altura das imagens para serem iguais */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem distorcer */
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do card verticalmente */
+    justify-content: space-between; /* Distribui o espaço dentro do card */
+    height: 100%; /* Faz com que todos os cards tenham a mesma altura */
+}
+
+.card2-body {
+    flex-grow: 1; /* Permite que o corpo do card expanda para preencher o espaço disponível */
 }
