@@ -333,6 +333,37 @@ body {
 .last-content {
     margin-bottom: 80px; /* Garante espaço suficiente acima do footer */
 }
+
+/* Estilização para imitar o Tooltip */
+.popover {
+    max-width: 200px; /* Limite a largura do popover */
+    font-size: 0.875rem; /* Tamanho de fonte similar ao tooltip */
+}
+
+.popover .popover-header {
+    background-color: #f8f9fa; /* Cor de fundo do cabeçalho */
+    font-size: 1em; /* Tamanho de fonte do cabeçalho */
+    color: #495057; /* Cor da fonte do cabeçalho */
+    border-bottom: none; /* Remover a borda inferior */
+    font-weight: bold; /* Peso da fonte */
+    border-radius: 0.3rem 0.3rem 0 0; /* Arredondar cantos superiores */
+}
+
+.popover .popover-body {
+    background-color: #f8f9fa; /* Cor de fundo do corpo */
+    color: #212529; /* Cor da fonte do corpo */
+    padding: 0.5rem; /* Espaçamento interno */
+}
+
+.popover .arrow::after {
+    border-top-color: #f8f9fa; /* Cor da seta para combinar com o fundo */
+}
+
+.popover .arrow::before {
+    display: none; /* Esconder a sombra da seta */
+}
+
+
 #nextTip {
     font-size: 24px;
     background: none; /* Remove o fundo padrão do botão */
