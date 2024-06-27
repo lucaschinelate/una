@@ -447,8 +447,8 @@ body {
         padding: 10px; /* Reduz ainda mais o padding */
     }
     .card-img-top {
-        height: 90px; /* Define a altura das imagens para serem iguais */
-        width: 90px;
+        height: 130px; /* Define a altura das imagens para serem iguais */
+        width: 130px;
     }
 }
 
