@@ -18,50 +18,61 @@
         <button class="btn filter-btn" onclick="filterSelection('sports', this)">Esportivo</button>
     </div>
     <div class="row show">
-        <!-- Certifique-se de que as classes incluam categorias relevantes para filtragem -->
         <!-- Itens Casuais -->
-        <div class="column formal col-lg-3 col-md-4 col-sm-6">
+        <div class="column formal col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_01.png')">
             <div class="card">
                 <img src="imagens/sugestao_01.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
-        <div class="column casual col-lg-3 col-md-4 col-sm-6">
+        <div class="column casual col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_02.png')">
             <div class="card">
                 <img src="imagens/sugestao_02.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
-        <div class="column casual col-lg-3 col-md-4 col-sm-6">
+        <div class="column casual col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_03.png')">
             <div class="card">
                 <img src="imagens/sugestao_03.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
-        <div class="column casual col-lg-3 col-md-4 col-sm-6">
+        <div class="column casual col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_04.png')">
             <div class="card">
                 <img src="imagens/sugestao_04.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
-        <div class="column formal col-lg-3 col-md-4 col-sm-6">
+        <div class="column formal col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_05.png')">
             <div class="card">
                 <img src="imagens/sugestao_05.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
-        <div class="column formal col-lg-3 col-md-4 col-sm-6">
+        <div class="column formal col-lg-3 col-md-4 col-sm-6" onclick="openModal('imagens/sugestao_06.png')">
             <div class="card">
                 <img src="imagens/sugestao_06.png" class="card-img-top" alt="Casual Look">
             </div>
         </div>
 
+        <!-- Repetir para outras imagens -->
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <img src="" id="modalImage" class="img-fluid">
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="navbar.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-
 <script>
     function filterSelection(category, button) {
         var elements = document.getElementsByClassName('column');
@@ -107,9 +118,17 @@
         element.className = arr1.join(" ");
     }
 
+    // Função para abrir o modal com a imagem
+    function openModal(imageSrc) {
+        $('#modalImage').attr('src', imageSrc); // Define o src da imagem no modal
+        $('#imageModal').modal('show'); // Abre o modal
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
         var allButton = document.querySelector('.filter-btn.btn-active');
         filterSelection('all', allButton);
     });
 
 </script>
+</body>
+</html>
