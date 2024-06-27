@@ -192,6 +192,18 @@ body {
     box-shadow: none; /* Remove sombra para evitar expansão visual externa */
 }
 
+.column {
+    display: none; /* Esconde todos os elementos inicialmente */
+}
+
+.column.show {
+    display: block; /* Mostra apenas elementos com a classe 'show' */
+}
+
+.btn-active {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+}
 
 .form-group label {
     font-weight: bold;
