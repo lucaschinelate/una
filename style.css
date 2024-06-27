@@ -3,16 +3,18 @@
 }
 
 body, html {
-    height: 100%;
+
     width: 100%;
     margin: 0;
-    padding-bottom: 150px; /* Ajuste para a altura do footer */
+    padding-bottom: 30px; /* Ajuste para a altura do footer */
     margin-bottom: 0px; !important;
     font-family: 'Roboto', sans-serif;
     background-image: url('imagens/fundo_moda_inclusiva.png'); /* Fundo gerado pelo DALL-E */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .navbar {
@@ -162,6 +164,7 @@ body {
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Sombra para dar destaque */
     background-color: #f8f9fa; /* Cor de fundo */
     color: #333; /* Cor do texto */
+    padding: 20px 0;
 
 }
 .container {
